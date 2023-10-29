@@ -1,4 +1,17 @@
 {
+  "name": "@workspace/electron",
+  "description": "My fantastic Electron app",
+  "version": "0.0.0",
+  "homepage": "./",
+  "main": "./public/electron.js",
+  "private": true,
+  "scripts": {
+    "lint": "TIMING=1 eslint \"src/**/*.{tsx|ts}\"",
+    "lint:silent": "npm run lint --quiet",
+    "run:electron": "electron .",
+    "start": "craco start",
+    "typecheck": "tsc --noEmit --skipLibCheck"
+  },
   "author": "termitavee",
   "browserslist": {
     "development": [
@@ -35,7 +48,6 @@
     "react-native-web": "^0.19.9",
     "react-scripts": "^5.0.1"
   },
-  "description": "My fantastic Electron app",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@expo/webpack-config": "^19.0.0",
@@ -43,17 +55,5 @@
     "electron-builder": "^24.6.4",
     "eslint-plugin-jest": "^27.4.0",
     "webpack": "^5.88.2"
-  },
-  "homepage": "./",
-  "main": "./public/electron.js",
-  "name": "@workspace/electron",
-  "private": true,
-  "scripts": {
-    "lint": "TIMING=1 eslint \"src/**/*.{tsx|ts}\"",
-    "lint:silent": "npm run lint --quiet",
-    "run:electron": "electron .",
-    "start": "craco start",
-    "typecheck": "tsc --noEmit --skipLibCheck"
-  },
-  "version": "0.0.0"
+  }
 }

@@ -1,0 +1,64 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "workspace/app"
+    },
+    {
+      "path": "workspace/ink"
+    },
+    {
+      "path": "workspace/expo"
+    },
+    {
+      "path": "workspace/electron"
+    }
+  ],
+  "settings": {
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git-graph.commitDetailsView.location": "Docked to Bottom",
+    "git-graph.date.format": "ISO Date & Time",
+    "git.allowForcePush": true,
+    "javascript.validate.enable": true,
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "sortJSON.contextMenu": {
+      "sortJSON": true,
+      "sortJSONAlphaNum": false,
+      "sortJSONAlphaNumReverse": false,
+      "sortJSONKeyLength": false,
+      "sortJSONKeyLengthReverse": false,
+      "sortJSONReverse": false,
+      "sortJSONType": false,
+      "sortJSONTypeReverse": false,
+      "sortJSONValues": false,
+      "sortJSONValuesReverse": false
+    },
+    "spotify.showSignOutButton": false,
+    "spotify.statusCheckInterval": 30000,
+    "spotify.trackInfoFormat": "trackName",
+    "svg.preview.mode": "svg",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontWeight": "normal",
+    "terminal.integrated.rightClickBehavior": "copyPaste",
+    "todo-tree.general.tags": ["BUG", "TOFIX", "TODO", "TOTEST"],
+    "json.format.enable": false,
+
+    "todo-tree.highlights.customHighlight": {
+      "TOFIX": {
+        "icon": "flame"
+      }
+    },
+    "todo-tree.highlights.defaultHighlight": {
+      "background": "#0000",
+      "foreground": "#dd0"
+    },
+    "todo-tree.tree.showCountsInTree": true,
+    "VSCodeCounter.exclude": ["**/.gitignore", "**/.vscode/**", "**/node_modules/**", "android/**", "ios/**"]
+  }
+}

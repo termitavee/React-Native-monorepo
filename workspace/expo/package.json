@@ -1,8 +1,8 @@
 {
   "name": "@workspace/expo",
   "main": "./src/entry-point.ts",
-  "private": false,
   "version": "1.0.0",
+  "private": false,
   "dependencies": {
     "expo": "~49.0.11",
     "expo-splash-screen": "~0.20.5",
@@ -21,10 +21,10 @@
   "scripts": {
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "lint": "TIMING=1 eslint \"src/**/*.{tsx|ts}\"",
+    "lint": "TIMING=1 eslint \"./src/**\"",
     "lint:silent": "npm run lint --quiet",
     "start": "expo start",
-    "test": "TZ=UTC jest",
+    "test": "TZ=UTC jest --passWithNoTests",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "web": "expo run:web"
   }
