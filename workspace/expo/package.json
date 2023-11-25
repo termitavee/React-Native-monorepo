@@ -3,6 +3,22 @@
   "main": "./src/entry-point.ts",
   "version": "1.0.0",
   "private": false,
+  "scripts": {
+    "start": "expo start",
+    "open:android": "expo run:android",
+    "open:ios": "expo run:ios",
+    "open:web": "expo run:web",
+    "open:desktop": "electron .",
+    "build:android": "eas build --platform android",
+    "build:ios": "eas build --platform android --local",
+    "build:web": "npx expo export -p web",
+    "build:desktop": "npm run build:web && echo // TODO investigate electron-forge",
+    "lint": "TIMING=1 eslint \"./src/**\"",
+    "lint:silent": "npm run lint --quiet",
+    "test": "TZ=UTC jest --passWithNoTests",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "web": "expo run:web"
+  },
   "dependencies": {
     "expo": "~49.0.11",
     "expo-splash-screen": "~0.20.5",
@@ -17,15 +33,5 @@
   },
   "expo": {
     "entryPoint": "./src/entry-point.ts"
-  },
-  "scripts": {
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "lint": "TIMING=1 eslint \"./src/**\"",
-    "lint:silent": "npm run lint --quiet",
-    "start": "expo start",
-    "test": "TZ=UTC jest --passWithNoTests",
-    "typecheck": "tsc --noEmit --skipLibCheck",
-    "web": "expo run:web"
   }
 }

@@ -6,10 +6,13 @@
   "main": "./public/electron.js",
   "private": true,
   "scripts": {
+    "start": "craco start",
+    "open:electron": "electron .",
+    "open:web": "echo open in the browser url shown in start command, commonly \"http://localhost:3000/\"",
+    "build:electron": "echo not implemented yet, invertigate electron forge",
+    "build:web": "echo not implemented yet, invetigate minify",
     "lint": "TIMING=1 eslint \"src/**/*.{tsx|ts}\"",
     "lint:silent": "npm run lint --quiet",
-    "run:electron": "electron .",
-    "start": "craco start",
     "typecheck": "tsc --noEmit --skipLibCheck"
   },
   "author": "termitavee",

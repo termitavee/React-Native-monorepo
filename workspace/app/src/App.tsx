@@ -5,6 +5,7 @@ import LogoSrc from './logo.png';
 
 const styles = StyleSheet.create({
   root: {
+    // TODO width to allow web/electron to
     height: '100%',
     alignItems: 'center',
     justifyContent: 'center',

@@ -5,8 +5,9 @@
   "version": "0.0.0",
   "bin": "dist/cli.js",
   "scripts": {
+    "start": "tsc --watch",
+    "open": "node ./dist",
     "build": "tsc",
-    "dev": "tsc --watch",
     "test": "prettier --check . && xo && ava"
   },
   "files": [

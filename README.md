@@ -6,6 +6,10 @@ Using the minimal dependencies to have a fully funciontal monorepo avoiding redu
 
 Scripts folder has all necesary functions to init, run, compile and general use script
 
+### Prerequisites
+
+- congifure [eas build](https://docs.expo.dev/build/setup/) to build apps
+
 ### Explanation
 
 Boilerplate to use React native sintaxt in all possible platforms. Sorted by framework so for a project some folders can be deleted
@@ -42,6 +46,8 @@ Until I syncronize React Native dependencies with root projects, each repo shoul
 - Fix issues related to monorepo
 
   - [ ] Fix image import differs from web and app
+    - [ ] Fix eslint/tsconfig, works but an error shows on run because Image types
+  - [ ] Fix ink tyoes, cannot import
 
 - Configure and improve projects
 
@@ -49,8 +55,8 @@ Until I syncronize React Native dependencies with root projects, each repo shoul
   - [x] Prettier config
   - [x] Project global config (added config, require fixes)
   - [ ] Add typescript and test linter commands
-  - [ ] Add start commands (bundler/watchers)
-  - [ ] Add start commands (open proper device if not managed by the above)
+  - [x] Add start commands (bundler/watchers)
+  - [x] Add start commands (open proper device if not managed by the above)
   - [x] Fix npm audit vulnerabilities (for now)
   - [ ] Add Storybook to preview screens and components (as a workspace for all workspaces not just app)
   - [ ] Try to use metro for web (Expo)
@@ -61,7 +67,7 @@ Until I syncronize React Native dependencies with root projects, each repo shoul
     - [ ] Add a component
   - [ ] Review dependencies, try to unify them as much as possible in root project
     - [x] Maybe App worspace only with peer dependencies?
-  - [ ] Make multiple workspaces to make it easier to differentiate them
+  - [x] Make multiple workspaces to make it easier to differentiate them
   - [ ] Make this project a cli to copy intself and manage/add/remove workspaces
 
 - Create and test hello world for apps
@@ -80,11 +86,11 @@ Until I syncronize React Native dependencies with root projects, each repo shoul
   - [ ] [Tarui](https://tauri.app/) (desktop) (like electron but with rust and webview)
   - [ ] [tv Expo](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
 
-- Create scripts
+- Create cli scripts
 
   - [ ] Init
-  - [ ] Rename
   - [ ] Change version
+  - [ ] Rename workspace
   - [ ] Remove/add workspace
 
 ## Documentation
