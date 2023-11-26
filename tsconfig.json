@@ -30,9 +30,9 @@
   "extends": "expo/tsconfig.base",
   "include": ["workspace/**/src/*"],
   "references": [
-    { "path": "./packages/expo" },
-    { "path": "./packages/ink" },
-    { "path": "./packages/electron" },
-    { "path": "./packages/app" }
+    { "path": "./workspace/expo" },
+    { "path": "./workspace/ink" },
+    { "path": "./workspace/electron" },
+    { "path": "./workspace/app" }
   ]
 }

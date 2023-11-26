@@ -22,7 +22,7 @@
     "open:ink": "npm run open -w @workspace/ink",
     "build:ink": "npm run build -w @workspace/ink",
     "typecheck": "npm run typecheck --workspaces --if-present",
-    "install:all": "npm i --workspaces --if-present",
+    "install:all": "npm i --workspaces",
     "lint:all": "npm run lint --workspaces --if-present",
     "lint": "TIMING=1 eslint \"src/**/*.{tsx|ts}\"",
     "lint:expo": "npm run lint -w @workspace/expo",
@@ -43,9 +43,7 @@
   "workspaces": [
     "workspace/*"
   ],
-  "dependencies": {
-    "ink": "^4.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@craco/craco": "^7.1.0",
     "@craco/types": "^7.1.0",
